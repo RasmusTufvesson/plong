@@ -122,11 +122,11 @@ fn main() {
         if ball.right() > window_size.x {
             ball_dir.x = -1.0;
             ball.set_right(window_size.x);
-            score_right += 1;
+            score_left += 1;
         } else if ball.x() < 0.0 {
             ball_dir.x = 1.0;
             ball.set_x(0.0);
-            score_left += 1;
+            score_right += 1;
         }
         if ball.bottom() > window_size.y {
             ball_dir.y = -1.0;
